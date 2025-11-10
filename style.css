@@ -17,7 +17,7 @@ body {
   width: 300px;
 }
 
-button {
+.btn {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: white;
@@ -29,6 +29,15 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
+.btn:hover {
   background-color: #fff335;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.quote::before,
+.quote::after {
+  content: '"';
 }
