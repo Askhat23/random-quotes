@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Quotes App</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container">
@@ -12,11 +19,15 @@
       <p id="quote" class="quote">Click the button to see a quote</p>
       <p id="quote-author">(author)</p>
       <button id="new-quote" class="btn">New Quote</button>
-      <button id="toggle-favorite-btn" class="btn">Add to favorites</button>
+      <i
+        id="toggle-favorite-btn"
+        class="far fa-star star-icon"
+        aria-hidden="true"
+      ></i>
     </div>
     <div class="favorites-container" id="favorites-container">
       <!-- Favorite quotes will be dinamically added here -->
     </div>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
