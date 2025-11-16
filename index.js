@@ -10,13 +10,13 @@ function setCurrentQuote(quote) {
 }
 
 const favoritesContainer = document.getElementById('favorites-container');
-const favoriteBtn = document.getElementById('favorite-btn');
-hideFavoriteBtn(favoriteBtn);
-favoriteBtn.addEventListener('click', () =>
-  toggleFavorite(currentQuote, favoriteBtn, favoritesContainer)
+const quoteFavoriteBtn = document.getElementById('quote-favorite-btn');
+hideFavoriteBtn();
+quoteFavoriteBtn.addEventListener('click', () =>
+  toggleFavorite(currentQuote, quoteFavoriteBtn, favoritesContainer)
 );
 
 const button = document.getElementById('new-quote');
 button.addEventListener('click', () => handleQuote(quotes, setCurrentQuote));
 
-export { favoriteBtn };
+export { quoteFavoriteBtn };
